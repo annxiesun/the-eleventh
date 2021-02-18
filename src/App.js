@@ -68,11 +68,11 @@ class App extends React.Component {
     for (let i = 0; i< 12; i++) {
       m[i].isChecked=false;
     }
-    this.setState({months:m, year: null, valid_year:false});
+    this.setState({months:m, year: 0, valid_year:false});
   }
 
   checkAll(){
-    let m= this.state.months
+    let m= m_;
     for (let i = 0; i< 12; i++) {
       m[i].isChecked=true;
     }
@@ -83,6 +83,9 @@ class App extends React.Component {
     let today = new Date();
 
     let m = m_
+    for (let i = 0; i< 12; i++) {
+      m[i].isChecked=false;
+    }
     m[parseInt(today.toISOString().slice(5,7)) - 1].isChecked = true;
 
     this.setState({
