@@ -42,6 +42,21 @@ body {
     margin:auto;
     font-size:3em;
 }
+
+.buttons {
+    position:fixed;
+    top:35%;
+    right:50px;
+    float: right;
+    height:2em;
+    width:2.7em;
+}
+
+.cal-btn{
+    position: relative;
+    padding-bottom:3em;
+    margin: 1em;
+}
 .number-block {
     position: relative;
     font-family: 'Backslash';

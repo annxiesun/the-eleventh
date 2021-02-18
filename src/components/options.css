@@ -34,6 +34,7 @@
 .m-text {
     transition:0.5s;
     padding-bottom:0.5em;
+    
 }
 
 .options-container{
@@ -43,4 +44,21 @@
     align-self: center;
     display:block;
     transition: 0.5s;
+}
+.month-choose {
+    display: grid;
+    grid-template-columns: 76% 8% 8% 8%;
+}
+.check-opt {
+   background: none;
+   border:none;
+   transition: 0.5s;
+   margin-bottom: 0.2em;
+}
+
+.check-opt:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    color: #807a71;
 }
