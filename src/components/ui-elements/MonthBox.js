@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./ui.css"
-import "../../resources/font.css"
+import "../../resources/global.css"
 
 class MonthBox extends React.Component {
     constructor(props) {
@@ -12,7 +12,7 @@ class MonthBox extends React.Component {
 
         return (
             <button className={(this.props.isChecked) ?
-                "month-square checked" : "month-square empty"}
+                "fill-button checked" : "fill-button empty"}
                 onClick={this.props.checkMonth}
                 value={this.props.value}>
                 {this.props.month}

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Day from "./day"
 import DayHeader from "./day_header"
+import "../../resources/global.css"
+
 const base_year = 1589;
 
 class Calendar extends React.Component {
@@ -79,8 +81,7 @@ class Calendar extends React.Component {
         return calendar;
     }
     render() {
-        console.log(this.props.year)
-        console.log(this.props.month)
+
         let calendar = this.makeCalendar(this.props.year, this.props.month+1);
         return (
             <div>

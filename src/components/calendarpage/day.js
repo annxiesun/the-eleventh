@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./day.css"
-import "../resources/font.css"
+import "../../resources/global.css"
 
 class Day extends React.Component {
     constructor(props) {

@@ -9,3 +9,19 @@
     grid-column-gap: 1em; 
     width:50%; 
 }
+.next-btn{
+    width:50px;
+    height:50px;
+    position: relative;
+    padding-top:0.5%;
+
+}
+
+.arrow-icon{
+    position:absolute;
+    top:50%;
+    bottom:50%;
+    transform:translate(-50%, -50%);
+    padding-top:50px;
+    
+}

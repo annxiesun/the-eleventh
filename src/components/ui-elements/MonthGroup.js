@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./ui.css"
-import "../../resources/font.css"
 import MonthBox from "./MonthBox"
+import "../../resources/global.css"
 
 class MonthGroup extends React.Component {
     constructor(props) {

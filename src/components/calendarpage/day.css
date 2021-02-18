@@ -1,6 +1,6 @@
 :root {
-    --block-size: 5vh;
-    --border-width: calc(0.01 * var(--block-size));
+    --block-size: 10vh;
+    
 }
 body {
     background-color: var(--cream);
@@ -18,7 +18,7 @@ body {
     vertical-align: top;
     border-style: solid;
     border-color: var(--dark);
-    border-width: var(--border-width) 0 0px var(--border-width);
+    border-width: calc(0.05 * var(--block-size)) 0px 0px calc(0.05 * var(--block-size));
     width: var(--block-size);
     height: var(--block-size);
 }
@@ -27,8 +27,8 @@ body {
 .calendar-block {
     border-style: solid;
     border-color: var(--dark);
-    border-width: 0px var(--border-width) var(--border-width) 0px;
-    width:calc(7 * var(--block-size) + var(--border-width) * 50);
+    border-width: 0px calc(0.05 * var(--block-size)) calc(0.05 * var(--block-size)) 0px;
+    width:calc(7 * var(--block-size) + calc(0.05 * var(--block-size)) * 7);
 
 }
 
@@ -52,7 +52,7 @@ body {
     display: inline-block;
     border-style: solid;
     border-color: var(--dark);
-    border-width: var(--border-width) 0px 0px var(--border-width);
+    border-width: calc(0.05 * var(--block-size)) 0px 0px calc(0.05 * var(--block-size));
     text-align: center;
     font-family: 'Backslash';
     background-color: var(--dark);
@@ -74,7 +74,8 @@ body {
         -webkit-transform: rotate(270deg);
         /* Chrome, Safari, Opera */
         transform: rotate(270deg);
-        width:100%;
+        margin-top:150px;
+        width:calc(7 * var(--block-size) + calc(0.05 * var(--block-size)) * 7);
     }
 
     

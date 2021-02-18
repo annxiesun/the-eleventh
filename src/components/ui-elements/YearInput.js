@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./ui.css"
-import "../../resources/font.css"
+import "../../resources/global.css"
 
 class YearInput extends React.Component {
     constructor(props) {
@@ -12,8 +12,6 @@ class YearInput extends React.Component {
         return (
             <div>
             <input className="year input-box" onChange={this.props.setYear}/>
-            <span className={(this.props.isValid) ?
-                "hide" : "show"}>Please enter valid year</span>
             </div>
         );
     }

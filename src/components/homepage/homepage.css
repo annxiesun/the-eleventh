@@ -1,0 +1,29 @@
+.create-btn {
+    width: 20em;
+    height: 5em;
+    display:block;
+    margin: 0 auto;
+}
+
+.image-logo-main{
+    display:block;
+    width:30em;
+    margin:0;
+    
+}
+
+.image-logo-icon{
+    display:block;
+    width:4em;
+    margin: 1em;
+    
+}
+
+.home-block {
+    width:30em;
+    margin:auto;
+   margin-top:10%;
+    align-self: center;
+    display:block;
+    transition: 0.5s;
+}

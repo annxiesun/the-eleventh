@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Backslash';
+    src: url('./Backslash.otf');
+  }
+
+  :root {
+    --cream: #E8E7E4;
+    --dark: #292624;
+  }
+
+  button {
+    outline: none;
+  }
+
+  input {
+    outline: none;
+  }
+
+  .fill-button {
+    height: 100%;
+    width: 100%;
+    border-color: var(--dark);
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    background: none;
+    z-index: 1;
+    transition:0.14s ease-in;
+    
+}
+
+.fill-button:hover{
+    color: var(--cream)
+ }
+
+.fill-button:before{
+    background-color: var(--dark);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.14s ease-in;
+    
+}
+
+.fill-button:hover:before {
+    top: 0;
+  }
+  
+  .fill-button:active {
+    background-color: var(--dark);
+  }
+
+  
