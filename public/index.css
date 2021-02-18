@@ -1,0 +1,10 @@
+.canvas{
+    width:50vw;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:7%;
+    border:2px black;
+    transform: translateZ(-5px);
+    user-select: none;
+}

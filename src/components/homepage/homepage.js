@@ -14,6 +14,7 @@ class Homepage extends React.Component {
     return (
       <FadeIn>
         <div class="layout">
+          
           <div>
             <div className="collage pic1">
               <img className="girl" src={"/assets/calendar-mockup1.png"} />
@@ -41,7 +42,7 @@ Each sheet is printed on 12 x 13 65lb canvas paper, with the highest quality of 
                 </button>
             <div class="btn-row">
               <button onClick={this.props.onClick} className="fill-button create-btn">
-                CREATE CALENDAR
+                CREATE DEMO
                 </button>
 
               <button onClick={this.props.onClick} className="fill-button create-btn">
