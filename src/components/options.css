@@ -1,0 +1,11 @@
+:root {
+    --grid-size: 50px;
+}
+.options-block {
+    display: grid;
+    grid-template-columns: var(--grid-size) var(--grid-size) var(--grid-size) var(--grid-size) var(--grid-size) var(--grid-size);
+    grid-template-rows: var(--grid-size) var(--grid-size);  
+    grid-row-gap: 1em; 
+    grid-column-gap: 1em; 
+    width:50%; 
+}

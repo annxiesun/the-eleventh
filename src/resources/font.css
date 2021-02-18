@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Backslash';
+    src: url('./Backslash.otf');
+  }
+
+  :root {
+    --cream: #E8E7E4;
+    --dark: #292624;
+  }
+
+  button {
+    outline: none;
+  }
+
+  input {
+    outline: none;
+  }
