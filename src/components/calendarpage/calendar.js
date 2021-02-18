@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Day from "./day"
 import DayHeader from "./day_header"
 import "../../resources/global.css"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const base_year = 1589;
 
@@ -84,13 +85,22 @@ class Calendar extends React.Component {
 
         let calendar = this.makeCalendar(this.props.year, this.props.month+1);
         return (
-            <div>
+            <ScrollAnimation 
+            animateIn='fadeIn'
+            >
             
+            <div>
+                <div className="cal-title">
+            {this.props.month_name} {this.props.year}
+            </div>
+
             <div className="calendar-block">
+                
             <DayHeader/>
                 {calendar}
             </div>
             </div>
+            </ScrollAnimation>
         );
     }
 }

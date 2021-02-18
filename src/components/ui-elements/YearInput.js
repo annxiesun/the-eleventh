@@ -11,7 +11,8 @@ class YearInput extends React.Component {
     render() {
         return (
             <div>
-            <input className="year input-box" onChange={this.props.setYear}/>
+            <input value={this.props.year}
+            className="year input-box" onChange={this.props.setYear}/>
             </div>
         );
     }

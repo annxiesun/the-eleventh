@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Calendar from './components/calendarpage/calendar';
+import CalendarGroup from './components/calendarpage/CalendarGroup';
 import Homepage from './components/homepage/homepage';
 import Options from './components/options';
+import TopBar from './components/ui-elements/TopBar';
 import $ from "jquery"
 import "./resources/global.css"
 
@@ -14,6 +15,7 @@ class App extends React.Component {
 
     this.toCalendar = this.toCalendar.bind(this);
     this.toOptions = this.toOptions.bind(this);
+    this.toHome = this.toHome.bind(this);
 
     this.setYear = this.setYear.bind(this);
     this.checkMonth = this.checkMonth.bind(this);
@@ -29,7 +31,7 @@ class App extends React.Component {
 
     this.state = {
       block: 0,
-      year: 0,
+      year: null,
       isValidYear: false,
       months: m
     }
@@ -62,13 +64,51 @@ class App extends React.Component {
 
    
   }
+
+  toHome() {
+    $('.transition').fadeOut(500)
+    setTimeout(
+      () =>{ setTimeout(this.setState({ block: 0 }), 400)
+        $('.transition').fadeIn(500)}, 500);
+
+   
+  }
+
   toCalendar() {
     if (this.valid_year(this.state.year) && this.checkChecked()) {
       $('.transition').fadeOut(500)
       setTimeout(
         () =>{ setTimeout(this.setState({ block: 2 }), 400)
           $('.transition').fadeIn(500)}, 500);
+    } else if (!this.valid_year(this.state.year) && !this.checkChecked()) {
+
+setTimeout( () => {
+  setTimeout(
+    () => {
+      $('.y-text').css("transform","translateY(0px)")
+  }, 200)
+  $('.y-text').css("transform","translateY(-25px)")
+}, 100)
+      setTimeout(
+        () => {
+          $('.m-text').css("transform","translateY(0px)")
+      }, 200)
+      $('.m-text').css("transform","translateY(-25px)")
     }
+    else if (!this.valid_year(this.state.year)) {
+      setTimeout(
+      () => {
+        $('.y-text').css("transform","translateY(0px)")
+    }, 200)
+    $('.y-text').css("transform","translateY(-25px)")
+
+    } else if (!this.checkChecked()) {
+      setTimeout(
+        () => {
+          $('.m-text').css("transform","translateY(0px)")
+      }, 200)
+      $('.m-text').css("transform","translateY(-25px)")
+    } 
   }
 
   setYear(e) {
@@ -97,23 +137,20 @@ class App extends React.Component {
     } else if (this.state.block == 1) {
       block = <Options toCalendar={this.toCalendar} checkMonth={this.checkMonth}
         months={this.state.months}
+        year={this.state.year}
         setYear={this.setYear} isValidYear={this.state.isValidYear}
         oneChecked={check} />
     } else {
-      let calendars = [];
-      for (let i = 0; i < this.state.months.length; i++) {
-        if (this.state.months[i].isChecked) {
-          calendars.push(<Calendar year={this.state.year}
-            month={i} />)
-        }
-      }
-
-      block = calendars
+      block = <CalendarGroup months={this.state.months}
+      year={this.state.year}/>
     }
 
     return (
+      <div>
+        <TopBar toHome={this.toHome}/>
       <div className="transition">
         {block}
+      </div>
       </div>
     );
   }

@@ -13,7 +13,7 @@ class Homepage extends React.Component {
     return (
         <FadeIn>
         <div>
-             <img className="image-logo-icon" src={"/assets/icon_logo.png"}/>
+             
 
         <div className="home-block">
             <img className="image-logo-main" src={"/assets/text_logo.png"}/>
