@@ -82,13 +82,13 @@ class Calendar extends React.Component {
         return calendar;
     }
     render() {
-
+/* <ScrollAnimation className="anim"
+            animateIn='fadeIn'>*/
         let calendar = this.makeCalendar(this.props.year, this.props.month+1);
         return (
-            <ScrollAnimation 
-            animateIn='fadeIn'
-            >
             
+           
+            <div className="cal-print">
             <div>
                 <div className="cal-title">
             {this.props.month_name} {this.props.year}
@@ -100,7 +100,9 @@ class Calendar extends React.Component {
                 {calendar}
             </div>
             </div>
-            </ScrollAnimation>
+            </div>
+      
+           
         );
     }
 }

@@ -164,7 +164,8 @@ class App extends React.Component {
   }
 
   onRedo() {
-    this.setState({block:1, year: null, months: m_, isValidYear:false})
+    this.clearAll();
+    this.setState({block:1})
   }
 
   checkChecked() {

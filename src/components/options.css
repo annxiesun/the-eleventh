@@ -28,12 +28,14 @@
 .y-text{
    padding-top:2em; 
    padding-bottom:0.5em;
-   transition:0.5s
+   transition:0.5s;
+   font-family:inherit;
 }
 
 .m-text {
     transition:0.5s;
     padding-bottom:0.5em;
+    font-family: inherit;
     
 }
 

@@ -28,6 +28,7 @@
     background: none;
     z-index: 1;
     transition:0.14s ease-in;
+    font-family: inherit;
     
 }
 

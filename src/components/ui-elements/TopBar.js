@@ -8,7 +8,7 @@ class TopBar extends React.Component {
 
   render() {
     return (
-<div>
+<div class="top-bar">
 <img className="image-logo-icon" src={"/assets/icon_logo.png"} onClick={this.props.toHome}/>
 <span className="links">
 <button className="nav-btn">Shop</button>
