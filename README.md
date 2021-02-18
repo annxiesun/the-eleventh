@@ -1,5 +1,5 @@
 # Demo
-Test here: https://the-eleventh.herokuapp.com/
+Product concept and website marketing. Test here: https://the-eleventh.herokuapp.com/
 
 ## Available Scripts
 
