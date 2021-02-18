@@ -101,6 +101,10 @@
     font-family: 'Backslash';
     font-size: 5vw;
     line-height: 3em;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
     
 }
 
@@ -110,6 +114,10 @@
     font-family: 'Backslash';
     font-size: 20vw;
     line-height: 0em;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .layout {

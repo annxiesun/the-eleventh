@@ -17,9 +17,10 @@ class Homepage extends React.Component {
           
           <div>
           <canvas id="canvas" class="canvas" />
-            <div className="collage pic1">
+            <figure className="collage pic1">
               <img className="girl" src={"/assets/calendar-mockup1.png"} />
-            </div>
+              <figcaption>Original Art by me.</figcaption>
+            </figure>
 
             <div className="collage pic2">
               <img className="city" src={"/assets/calendar-mockup2.png"} />
