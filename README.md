@@ -1,4 +1,4 @@
-# FeatherFinder (A bird quiz)
+# the 11th
 
 ## DEMO
 To try out:
