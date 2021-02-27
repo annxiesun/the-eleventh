@@ -2,7 +2,7 @@
 
 ## DEMO
 To try out:
-https://featherfinder.herokuapp.com/ or clone and `npm start`
+https://the-eleventh.herokuapp.com/ or clone and `npm start`
 
 ## ABOUT
 'The Eleventh' is a product/marketing concept website for a concept calendar company. 
