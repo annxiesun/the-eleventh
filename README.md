@@ -1,19 +1,19 @@
-# Demo
-Product concept and website marketing. Test here: https://the-eleventh.herokuapp.com/
+# FeatherFinder (A bird quiz)
 
-## Available Scripts
+## DEMO
+To try out:
+https://featherfinder.herokuapp.com/ or clone and `npm start`
 
-In the project directory, you can run:
+## ABOUT
+'The Eleventh' is a product/marketing concept website for a concept calendar company. 
 
-### `npm start`
+I first started off with a webapp that can generate a calendar for any year the user chooses. The user can also specify which months in that year they want to choose. They can also choose options like 'select all months', 'clear all months', 'select current month & year', which were added to ease the user-experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I also thought that user-interactivity like quizzes was a key way many businesses get customers, so I thought this web-app would be a great add-on to a calendar company. With this site, I went for a more elegant but contemporary look, inspired  by magazines like the 'New Yorker' except with calendars. I even made some illustrations to go with the site.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## MADE WITH
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - Javascript
+ - HTML/CSS
+ - React
+ - Node
